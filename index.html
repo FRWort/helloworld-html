@@ -1,0 +1,64 @@
+<!-- Hello World! This is my first basic HTML5 page. After "learning how coding works" with Quake's (Q3) source code (C++/C) for years
+     I've decided to start learning web development. I have a basis but haven't really coded anything that's not related to Quake..
+     Let's see if the "playing with source codes" method has helped me to think as a programmer/make it easier to understand & learn
+     other programming lenguages. -->
+
+<!-- WARNING: This source code will be EXTRA commited -->
+<!-- I can (and probably will) make mistakes on the explanations. They'll be corrected while learning -->
+
+<!DOCTYPE html>
+<!-- HTML5 DOC - Web browser will render in standards mode instead of quirk mode -->
+<!-- If not declared, our page could have unwanted/unexpected effects in some browsers -->
+
+<html lang="en">
+<!-- Represents the root of our HTML document -->
+<head>
+    <!-- Metadata of our page -->
+    <meta charset="utf-8" /> <!-- MUST make sure browser is using UTF-8 charset to ensure correct displaying (check: UTF-7 XSS (old)) -->
+    <meta name="keywords" content="HTML5, helloworld, hello, world" /> <!-- Client's browser will check for this when searching -->
+    <meta name="description" content="My first HTML5 page" />
+    <meta name="author" content="FRWort" />
+    <title>My First Page &#65372; FRWort</title> <!-- (&#65372; -> |) encoded character/html entity (some IDEs don't support special chars) -->
+
+</head>
+<body>
+<!-- The container of our HTML document -->
+
+    <img src="images/FreeLogo.png" alt="Mandalorian Logo" widht="150" height="150"/> <!-- Page logo from path ./images/ -->
+    <h1>Hello World!</h1> <!-- Main title should be printed with h1 tag -->
+
+    <p>This is a <b><u>simple</u></b> HTML5 page.<br> <!-- paragraph with <br> (newlines) -->
+    COVID-19 = <strong>Learning new skills</strong></p> <!-- strong tag is affected by client's browser (it decides how to show it) -->
+
+    <h3>My goals:</h3>
+    <ul> <!-- Unordered list -->
+        <li>Learning the basics of HTML5.</li> <!-- List's items -->
+        <li>Uploading my progress on GitHub.</li>
+        <li>Improving at web development.</li>
+    </ul>
+
+    <p><code>if (q3_qboolean) {<br>&emsp;Com_Printf("FOR MANDALORE!\n");<br>&emsp;return;<br>}</code></p> <!-- Simple Q3 C++ code (&emsp; = A_Tab) -->
+
+    <!-- preformatted text -->
+    <pre>This is a preformatted text ->    Preserves spaces and
+                                  breaklines and fixed-width text.
+You can also display HTML tags with encoded characters &lt;pre&gt; &lt;/pre&gt;
+  Beware, it will also display the tabs you use in your HTML documents for readability.</pre>
+
+  <!-- pointless without CSS (i think), but as an example -->
+  <table> <!-- tr = rows, td = columns -->
+    <tr>
+      <td>Row: 1, Column: 1</td>
+      <td	colspan="3">Column: 2 + 3 + 4</td> <!-- colspan = column span -->
+    </tr>
+    <tr>
+      <td rowspan="2">Row: 2+3, Column: 1</td>
+    </tr>
+  </table>
+
+    <button disabled id="spBtn">Spanish Bot&#243;n</button> <!-- (&#243; -> ó) encoded character/html entity -->
+    <button id="enBtn">English Button</button> <!-- CSS style is set by client's browser (if no CSS style of our own defined ofc) -->
+    <!-- id stands for the unique identifier of the button, which could be used in a JS file to execute a function -->
+
+</body>
+</html>
