@@ -45,16 +45,21 @@
 You can also display HTML tags with encoded characters &lt;pre&gt; &lt;/pre&gt;
   Beware, it will also display the tabs you use in your HTML documents for readability.</pre>
 
-  <!-- pointless without CSS (i think), but as an example -->
-  <table> <!-- tr = rows, td = columns -->
-    <tr>
-      <td>Row: 1, Column: 1</td>
-      <td	colspan="3">Column: 2 + 3 + 4</td> <!-- colspan = column span -->
+  <!-- http://www.kompx.com/en/html-table-borders-without-css.htm -->
+  <table width="100%" cellspacing="3" cellpadding="3" border="0" align="center" bgcolor="#000000"> <!-- #000000 = Hex - Black color -->
+    <!-- tr = rows, td = columns -->
+    <tr bgcolor="#39c618">
+      <td height="67" colspan="3">Row: 1, Column: (1 + 2 + 3)</td> <!-- colspan = column span (for spanish speakers) -->
     </tr>
-    <tr>
-      <td rowspan="2">Row: 2+3, Column: 1</td>
-    </tr>
-  </table>
+      <tr bgcolor="#ebdb09">
+        <td height="67">&nbsp;</td> <!-- (&nbsp; -> non-breaking space) -->
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr bgcolor="#da1d1d">
+        <td height="67" colspan="3">&nbsp;</td>
+      </tr>
+    </table>
 
     <button disabled id="spBtn">Spanish Bot&#243;n</button> <!-- (&#243; -> ó) encoded character/html entity -->
     <button id="enBtn">English Button</button> <!-- CSS style is set by client's browser (if no CSS style of our own defined ofc) -->
