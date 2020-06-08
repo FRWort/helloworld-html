@@ -42,8 +42,7 @@
     <!-- preformatted text -->
     <pre>This is a preformatted text ->    Preserves spaces and
                                   breaklines and fixed-width text.
-You can also display HTML tags with encoded characters &lt;pre&gt; &lt;/pre&gt;
-  Beware, it will also display the tabs you use in your HTML documents for readability.</pre>
+    You can also display HTML tags with encoded characters <b>&lt;pre&gt; &lt;/pre&gt;</b></pre>
 
   <!-- http://www.kompx.com/en/html-table-borders-without-css.htm -->
   <table width="100%" cellspacing="3" cellpadding="3" border="0" align="center" bgcolor="#000000"> <!-- #000000 = Hex - Black color -->
@@ -61,9 +60,15 @@ You can also display HTML tags with encoded characters &lt;pre&gt; &lt;/pre&gt;
       </tr>
     </table>
 
-    <button disabled id="spBtn">Spanish Bot&#243;n</button> <!-- (&#243; -> ó) encoded character/html entity -->
-    <button id="enBtn">English Button</button> <!-- CSS style is set by client's browser (if no CSS style of our own defined ofc) -->
-    <!-- id stands for the unique identifier of the button, which could be used in a JS file to execute a function -->
+    <!-- <a> specifies address destination -->
+    <a href="http://www.kompx.com/en/html-table-borders-without-css.htm">Table in HTML5 without CSS<br><br></a>
+    <!-- you can also link to other pages in your website -->
+    <a href="./climbingcom.html">Learn climbing commands</a>
+    <!-- <a href="#section2">Go to Section 2</a> <!-- or section -->
 
+    <!-- TODO: fix overlapping -->
+    <!-- <button disabled id="spBtn">Spanish<br>Bot&#243;n</button> <!-- (&#243; -> ó) encoded character/html entity -->
+    <!-- <button id="enBtn">English<br>Button</button> <!-- Default CSS style is set by client's browser (if no CSS style of our own is defined ofc) -->
+    <!-- id stands for the unique identifier of the button, which could be used in a JS file to execute a function -->
 </body>
 </html>
