@@ -25,10 +25,12 @@
 <!-- The container of our HTML document -->
 
     <img src="images/FreeLogo.png" alt="Mandalorian Logo" width="150" height="150"/> <!-- Page logo from path ./images/ -->
-    <h1>Hello World!</h1> <!-- Main title should be printed with h1 tag -->
+    <h1 role="banner">Hello World!</h1> <!-- Main title should be printed with h1 tag -->
 
-    <p>This is a <b><u>simple</u></b> HTML5 page.<br> <!-- paragraph with <br> (newlines) -->
-    COVID-19 = <strong>Learning new skills</strong></p> <!-- strong tag is affected by client's browser (it decides how to show it) -->
+    <!-- ARIA landmarks: https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page -->
+    <main role="main">
+      <p>This is a <b><u>simple</u></b> HTML5 page.<br> <!-- paragraph with <br> (newlines) -->
+      COVID-19 = <strong>Learning new skills</strong></p> <!-- strong tag is affected by client's browser (it decides how to show it) -->
 
     <h3>My goals:</h3>
     <ul> <!-- Unordered list -->
@@ -36,6 +38,7 @@
         <li>Uploading my progress on GitHub.</li>
         <li>Improving at web development.</li>
     </ul>
+    </main>
 
     <hr> <!-- horizontal line -->
     <p><code>if (q3_qboolean) {<br>&emsp;Com_Printf("FOR MANDALORE!\n");<br>&emsp;return;<br>}</code></p> <!-- Simple Q3 C++ code (&emsp; = A_Tab) -->
@@ -73,7 +76,7 @@
     <!-- <button id="enBtn">English<br>Button</button> <!-- Default CSS style is set by client's browser (if no CSS style of our own is defined ofc) -->
     <!-- id stands for the unique identifier of the button, which could be used in a JS file to execute a function -->
 
-    <footer>
+    <footer role="contentinfo">
       <p>© Test-web - 2020</p>
     </footer>
 </body>
